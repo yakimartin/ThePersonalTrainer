@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="y" padding>
+ 
+
+  <table  class="table">
+    
+  <tr class="daysNhours" *ngFor="let i of matrix; let even = even; let odd=odd" [ngClass]="{odd:odd,even:even}">
+    <td class="yaki"  *ngFor="let j of i ">
+        <div  >
+            {{j}}
+        </div>
+        
+    </td>
+  </tr>
+</table>
+<div class="s">
+     Grade= {{HumanGrade}}/{{nambersOftTainees}}
+     <br>
+     Standard Deviation= {{StandardDeviation}}
+
+</div>
+</ion-content>
